@@ -8,5 +8,7 @@ RUN git clone https://github.com/pytorch/vision \
     && python setup.py install \
     && cd .. \
     && rm -rf vision
+RUN pip install visdom
+RUN pip install dominate
 RUN git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 WORKDIR  pytorch-CycleGAN-and-pix2pix
