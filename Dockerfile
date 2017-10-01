@@ -12,3 +12,5 @@ RUN pip install visdom
 RUN pip install dominate
 RUN git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 WORKDIR  pytorch-CycleGAN-and-pix2pix
+RUN bash ./datasets/download_pix2pix_dataset.sh monet2photo
+
