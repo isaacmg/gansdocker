@@ -10,7 +10,7 @@ RUN git clone https://github.com/pytorch/vision \
     && cd .. \
     && rm -rf vision
 RUN cd
-RUN git clone git@github.com:zhanghang1989/PyTorch-Style-Transfer.git \
+RUN git clone https://github.com/zhanghang1989/PyTorch-Style-Transfer \
     && cd PyTorch-Style-Transfer/experiments \
     && bash models/download_model.sh
 RUN pip install visdom
