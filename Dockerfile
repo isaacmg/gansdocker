@@ -11,8 +11,8 @@ RUN git clone https://github.com/pytorch/vision \
     && rm -rf vision
 RUN cd
 RUN git clone git@github.com:zhanghang1989/PyTorch-Style-Transfer.git
-RUN cd PyTorch-Style-Transfer/experiments
-bash models/download_model.sh
+RUN  cd PyTorch-Style-Transfer/experiments
+    && bash models/download_model.sh
 RUN pip install visdom
 RUN pip install dominate
 RUN git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
