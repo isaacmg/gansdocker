@@ -10,8 +10,8 @@ RUN git clone https://github.com/pytorch/vision \
     && cd .. \
     && rm -rf vision
 RUN cd
-RUN git clone git@github.com:zhanghang1989/PyTorch-Style-Transfer.git
-RUN  cd PyTorch-Style-Transfer/experiments
+RUN git clone git@github.com:zhanghang1989/PyTorch-Style-Transfer.git \
+    && cd PyTorch-Style-Transfer/experiments \
     && bash models/download_model.sh
 RUN pip install visdom
 RUN pip install dominate
